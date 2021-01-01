@@ -1,29 +1,46 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=Roboto&family=Roboto+Slab:wght@300;400&family=Sen&display=swap');
 :root {
     --body-color: #fff;
     --card-bg: #f0f2fa;
     --heading-color: #1e202a;
     --text-color: #0d0e11;
+    --bg-trans: rgba(255, 255, 255, 0.384);
     --custom-btn-text: #fff;
     --btn-bg-color: #2ea3d0;
+    --icon-bg: rgb(10 183 191 / 10%);
+    --icon-hover-bg: rgb(10 183 191 / 38%);
+    --bg-dark-light: #fff;
 }
 
 .dark {
     --body-color: #1f212e;
+    --bg-trans: rgba(0, 0, 0, 0.384);
     --card-bg: #252a41;
     --heading-color: #ffffff;
     --text-color: #fff;
+    --bg-dark-light: #111;
 }
 
-.fas {
+.fa-moon {
     cursor: pointer;
     color: var(--custom-btn-text);
+    -webkit-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
     transform: rotate(-25deg);
 }
 
 body,
 html {
     background-color: var(--body-color);
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     font-family: 'Bellefair', serif;
     font-family: 'Belleza', sans-serif;
@@ -32,6 +49,11 @@ html {
     font-family: 'Sen', sans-serif;
 }
 
+
+/* h1 {
+    font-family: 'Bellefair', serif;
+} */
+
 .headings {
     font-family: 'Bellefair', serif;
 }
@@ -39,6 +61,7 @@ html {
 .headings-content {
     font-family: 'Belleza', sans-serif;
     color: var(--text-color);
+    letter-spacing: 2px;
 }
 
 p {
@@ -80,9 +103,15 @@ a:hover {
     text-align: center;
 }
 
+.contact-no:hover i,
 .navbar_brand,
 .navbar-light .navbar-nav .nav-link,
-.dropdown-item {
+.dropdown-item,
+.contact-no,
+.blog-post-heading,
+.contact-lite-section h1,
+#nav ul.main li a span,
+.service-section .service-main h4 {
     color: var(--heading-color);
 }
 
@@ -105,7 +134,6 @@ a:hover {
     width: 100%;
     height: auto;
     -webkit-transition: all ease-out .5s;
-    -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
     transition: all ease-out .5s;
 }
@@ -117,7 +145,6 @@ a:hover {
 
 .h_50px {
     -webkit-transition: all ease-out .5s;
-    -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
     transition: all ease-out .5s;
     padding: 0 !important;
@@ -126,7 +153,6 @@ a:hover {
 
 .h_80px {
     -webkit-transition: all ease-out .5s;
-    -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
     transition: all ease-out .5s;
     height: 100px;
@@ -192,11 +218,12 @@ a:hover {
     background-color: var(--btn-bg-color);
     outline: 1px solid transparent;
     -webkit-transition-property: background-color, -webkit-transform;
-    -moz-transition-property: background-color, -moz-transform;
     -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, -webkit-transform;
+    -o-transition-property: background-color, transform;
     transition-property: background-color, transform;
+    transition-property: background-color, transform, -webkit-transform;
     -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
@@ -223,18 +250,14 @@ a:hover {
 
 .menu.clicked span::before {
     -webkit-transform: translateY(9px) rotate(45deg);
-    -moz-transform: translateY(9px) rotate(45deg);
     -ms-transform: translateY(9px) rotate(45deg);
-    -o-transform: translateY(9px) rotate(45deg);
     transform: translateY(9px) rotate(45deg);
     width: 33px;
 }
 
 .menu.clicked span::after {
     -webkit-transform: translateY(-9px) rotate(-45deg);
-    -moz-transform: translateY(-9px) rotate(-45deg);
     -ms-transform: translateY(-9px) rotate(-45deg);
-    -o-transform: translateY(-9px) rotate(-45deg);
     transform: translateY(-9px) rotate(-45deg);
 }
 
@@ -260,29 +283,25 @@ a:hover {
     padding: 45px 15px 45px 15px;
     overflow-y: auto;
     -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -moz-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 #nav.show {
     -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
     transform: translateX(0px);
 }
 
 #nav.show ul.main li {
     -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
     transform: translateX(0px);
     opacity: 1;
 }
@@ -293,30 +312,44 @@ a:hover {
 }
 
 #nav.show ul.main li:nth-child(1) {
+    -webkit-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
 
 #nav.show ul.main li:nth-child(2) {
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
 
 #nav.show ul.main li:nth-child(3) {
+    -webkit-transition-delay: 0.45s;
+    -o-transition-delay: 0.45s;
     transition-delay: 0.45s;
 }
 
 #nav.show ul.main li:nth-child(4) {
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
     transition-delay: 0.6s;
 }
 
 #nav.show ul.main li:nth-child(5) {
+    -webkit-transition-delay: 0.75s;
+    -o-transition-delay: 0.75s;
     transition-delay: 0.75s;
 }
 
 #nav.show ul.main li:nth-child(6) {
+    -webkit-transition-delay: 0.9s;
+    -o-transition-delay: 0.9s;
     transition-delay: 0.9s;
 }
 
 #nav.show ul.main li:nth-child(7) {
+    -webkit-transition-delay: 1.05s;
+    -o-transition-delay: 1.05s;
     transition-delay: 1.05s;
 }
 
@@ -326,13 +359,10 @@ a:hover {
 
 #nav ul.main li {
     -webkit-transform: translateX(40px);
-    -moz-transform: translateX(40px);
     -ms-transform: translateX(40px);
-    -o-transform: translateX(40px);
     transform: translateX(40px);
     opacity: 0;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     float: none;
@@ -351,13 +381,8 @@ a:hover {
     display: block;
     padding: 10px 0;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-}
-
-#nav ul.main li a span {
-    color: var(--heading-color);
 }
 
 .overlay {
@@ -368,7 +393,6 @@ a:hover {
     width: 100%;
     height: 100%;
     -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #603e82;
@@ -386,4 +410,134 @@ a:hover {
     background-position: center;
     min-height: 40em;
     padding: 10em 0 0 0;
+}
+
+
+/* -------------testimonial-section---------------------------------------------------------- */
+
+.testimonial-section h4,
+.testimonial-sub .testimonial-content h4 {
+    color: var(--text-color);
+}
+
+.testimonial-section .testimonial-sub {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.testimonial-section .testimonial-sub img {
+    height: 20em;
+    width: auto;
+}
+
+.testimonial-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: var(--bg-trans);
+}
+
+.about-icon {
+    background: var(--icon-bg);
+    text-align: center;
+    height: 65px;
+    border-radius: 50% 50%;
+    transition: 0.5s;
+    width: 65px;
+}
+
+.icon-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    padding-top: 1.3em;
+}
+
+.about-content {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--heading-color);
+}
+
+.about-content a {
+    color: var(--heading-color);
+    transition: 0.3s;
+}
+
+.about-icon i {
+    color: var(--btn-bg-color);
+    transition: 0.5s;
+    font-size: 22px;
+    line-height: 65px;
+}
+
+.icon-content1:hover .about-icon i,
+.icon-content2:hover .about-icon i {
+    color: var(--custom-btn-text);
+    transition: 0.5s;
+}
+
+.icon-content:hover .about-icon {
+    background: var(--btn-bg-color);
+    transition: 0.5s;
+}
+
+.video-section span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-section a img {
+    border-radius: 9%;
+}
+
+.blog-main div span {
+    background: var(--icon-bg);
+    color: var(--btn-bg-color);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 15px 8px 15px;
+}
+
+.blog-title {
+    color: var(--heading-color);
+    font-size: 20px;
+    display: inherit;
+}
+
+.blog-date {
+    margin-top: 5px;
+    ;
+}
+
+.blog-main div a {
+    color: var(--text-color);
+    transition: .3s;
+}
+
+
+/* .blog-main div a i {
+    color: var(--btn-bg-color);
+} */
+
+.blog-main a:hover,
+.contact-no:hover,
+.blog-main div a i,
+.about-content a:hover,
+.service-section i {
+    color: var(--btn-bg-color);
+    transition: .3s;
+}
+
+.blog-main {
+    border-radius: 23px;
+}
+
+.about-section,
+.contact-lite-section {
+    background: var(--bg-dark-light);
 }
