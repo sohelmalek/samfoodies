@@ -135,7 +135,9 @@ a:hover {
 #nav ul.main li a span,
 .service-section .service-main h4,
 .promocode-section h6,
-.promocode-section h2 {
+.promocode-section h2,
+.about-main-banner h3,
+.about-main-banner ul li {
     color: var(--heading-color);
 }
 
@@ -643,4 +645,30 @@ a:hover {
     border-width: 1px;
     /* border: 1px solid;
     border-right: none; */
+}
+
+
+/* ----------ABOUT PAGE CSS----------------------------------------------------------------- */
+
+.about-main-banner {
+    background: url('https://i.ibb.co/QDtQMxG/innerbanner.png');
+    background-size: cover;
+    /* background-attachment: scroll; */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    /* padding: 10em 0 0 0; */
+}
+
+.about-main-banner .breadcrumb {
+    background: none;
+    justify-content: center;
+}
+
+.about-main-banner nav .breadcrumb .breadcrumb-item {
+    font-size: 1.2em !important;
+}
+
+.about-main-banner ul li span {
+    color: var(--btn-bg-color);
 }
