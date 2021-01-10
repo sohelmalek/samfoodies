@@ -1,10 +1,14 @@
 var iicon = $(".navbar-nav .nav-item i");
+var mobiicon = $(".dropdown .dropbtn i");
 var mobicon = $("#mob-menu .navbar i");
 var lg_menu = $("#lg-menu");
 var mob_menu = $("#mob-menu");
 if ($(window).width() < 992) {
-    iicon.removeClass("fas text-dark fa-moon fa-2x", 2000);
-    mobicon.addClass("fas text-dark fa-moon fa-2x", 2000);
+    iicon.removeClass("fas fa-moon fa-2x", 2000);
+    mobicon.addClass("fas fa-moon fa-2x", 2000);
+    mobiicon.removeClass(" fa-moon fa-2x", 2000);
+
+
     // lg_menu.addClass("d-none");
     // mob_menu.removeClass("d-none");
 
@@ -14,8 +18,10 @@ if ($(window).width() < 992) {
 
 } else {
 
-    iicon.addClass("fas text-dark fa-moon fa-2x", 2000);
-    mobicon.removeClass("fas text-dark fa-moon fa-2x", 2000);
+    iicon.addClass("fas fa-moon fa-2x", 2000);
+    mobicon.removeClass("fas fa-moon fa-2x", 2000);
+    mobiicon.removeClass(" fa-moon fa-2x", 2000);
+
     // lg_menu.removeClass("d-none");
     // mob_menu.addClass("d-none");
 
@@ -213,4 +219,25 @@ let setDarkMode = localStorage.getItem('dark');
 // Check dark mode is on or off on page reload
 if (setDarkMode === 'on') {
     darkMode();
+}
+// ---------------new mobile menu-------------------------------------
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
