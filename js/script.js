@@ -240,4 +240,13 @@ window.onclick = function(event) {
             }
         }
     }
-}
+};
+// ---------tooltip-----------------------------------------------
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+// ---------video light box---------------------------------------------------
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});

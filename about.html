@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="css/darkmode.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <link id="theme" rel="stylesheet" type="text/css" href="lightmode.css" />
+    <link rel="stylesheet" type="text/css" href="samfoodies.css" />
     <!-- font awesome -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=Roboto+Slab:wght@300&family=Sen&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
 <body class="main-section">
 
     <section class="">
+        <div id="main-section1"></div>
         <!-------------navbar menu---------------------------------------------->
         <div class="sss main_nav" id="main-section1">
             <div class="container" id="main-section1">
@@ -58,6 +59,7 @@
                                             Pages
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <span></span>
                                             <a class="dropdown-item" href="blog-posts.html">Blog Posts</a>
                                             <a class="dropdown-item" href="blog-single.html">Blog Single</a>
                                             <a class="dropdown-item" href="error.html">404 Page</a>
@@ -68,17 +70,37 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact.html">Contact Us</a>
                                     </li>
-                                    <li class="nav-item mr-3 ml-4 justify-content-end">
-                                        <i class="fa" style="height: 25px;   width: 25px;"></i>
-                                        <!-- <a href="#" class="" id="theme-toggle">
-                                                <i class="far fa-moon moon"></i>
-                                            </a> -->
-                                    </li>
+
+                                </ul>
+                                <ul class="navbar-nav navbar-nav-1  ml-auto d-flex flex-row justify-content-end  ">
                                     <li>
-                                        <form class="form-inline my-2 my-lg-0">
-                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                                        </form>
+                                        <div class="search">
+                                            <input type="text" placeholder="search" />
+                                            <div class="symbol">
+
+                                                <svg class="lens">
+                                                    <use xlink:href="#lens" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
+                                                <path
+                                                    d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
+                                              C27.148,6.68,21.624,2.89,15.862,3.931c-3.308,0.597-6.134,2.715-7.618,5.708c-4.763,0.2-8.46,4.194-8.257,8.919
+                                              c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z" />
+                                            </symbol>
+                                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="lens">
+                                                <path d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
+                                              s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
+                                              c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
+                                              c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
+                                              C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z" />
+                                            </symbol>
+                                        </svg>
+                                    </li>
+                                    <li class="nav-item mr-3  justify-content-end">
+                                        <i class="fa" style="height: 25px;   width: 25px;"></i>
                                     </li>
                                 </ul>
                             </div>
@@ -174,7 +196,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
                             </ol>
                         </nav>
                     </div>
@@ -209,15 +231,15 @@
         </section>
         <!-- ------------main banner END-------------------------------------------------------------- -->
         <!-- <%--..............Counting ......................................................--%> -->
-        <section class="about-section py-2 py-md-5">
+        <section class="about-section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="container-fluid">
                             <div class="row">
 
-                                <div class="col-12 col-md-3">
-                                    <div class="counter-4">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
                                         <div class="counter-4-content">
                                             <div class="counter-4-icon">
                                                 <i class="fa fa-globe"></i>
@@ -227,8 +249,8 @@
                                         <h3>Happy Customers</h3>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="counter-4">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
                                         <div class="counter-4-content">
                                             <div class="counter-4-icon">
                                                 <i class="fa fa-globe"></i>
@@ -240,8 +262,8 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="counter-4">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
                                         <div class="counter-4-content">
                                             <div class="counter-4-icon">
                                                 <i class="fa fa-globe"></i>
@@ -253,8 +275,8 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="counter-4">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
                                         <div class="counter-4-content">
                                             <div class="counter-4-icon">
                                                 <i class="fa fa-globe"></i>
@@ -289,20 +311,16 @@
             </div>
         </section>
         <!-- <%--..............Counting END......................................................--%> -->
-
-
-
-
         <!-- ------------TEstimonials-------------------------------------------------------------- -->
-        <section class="testimonial-section py-2 py-md-5">
+        <section class="testimonial-section py-5">
             <div class="container-fluid bg-dangr">
                 <div class="row">
-                    <div class="col-lg-4 col-md-10 offset-1 my-auto px-1 px-md-5">
+                    <div class="col-lg-4 col-md-10 offset-md-1 my-auto px-2 px-md-5">
                         <h1 class="headings-content font-weight-bold">Hello. Our structure has been present for over 20 years. We make the best !</h1>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-2  px-2">
-                        <div class="testimonial-sub">
-                            <img src="https://i.ibb.co/g737RtY/t2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
+                    <div class="col-lg-3 col-sm-6 mt-2  px-2">
+                        <div class="testimonial-sub shadow">
+                            <img src="https://i.ibb.co/0C8y0B7/chefs-2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
                             <div class="testimonial-content">
                                 <h4 class="pt-3">Jimic Nasium
                                 </h4>
@@ -310,9 +328,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-2  px-2">
-                        <div class="testimonial-sub">
-                            <img src="https://i.ibb.co/bRSX9Z5/testimonial-2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
+                    <div class="col-lg-3 col-sm-6 mt-2  px-2">
+                        <div class="testimonial-sub  shadow">
+                            <img src="https://i.ibb.co/xq96g3j/chefs-1.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
                             <div class="testimonial-content">
                                 <h4 class="pt-3">Siri Nasium
                                 </h4>
@@ -323,29 +341,79 @@
 
                 </div>
             </div>
+            <div class="container pt-2 pt-md-5">
+                <div class="row">
+                    <div class="col-md-6 about-icon-main">
+                        <div class="icon-content icon-content1">
+                            <div class="about-icon about-icon1">
+                                <i class="fas fa-utensils "></i>
+                            </div>
+                            <div class="about-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+                        <div class="icon-content icon-content2">
+                            <div class="about-icon">
+                                <i class="fas fa-utensils "></i>
+                            </div>
+                            <div class="about-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 about-icon-main">
+                        <div class="icon-content icon-content1">
+                            <div class="about-icon about-icon1">
+                                <i class="fas fa-utensils "></i>
+                            </div>
+                            <div class="about-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+                        <div class="icon-content icon-content2">
+                            <div class="about-icon">
+                                <i class="fas fa-utensils "></i>
+                            </div>
+                            <div class="about-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
         </section>
         <!-- ------------TEstimonials-------------------------------------------------------------- -->
+
         <!-- ------------About Section 2-------------------------------------------------------------- -->
-        <section class="about-page-section py-2 py-md-5">
+        <section class="about-page-section py-5">
             <div class="container">
                 <div class="row">
-
-
                     <div class="col-12 mt-3">
-                        <div class="video-section">
-                            <a href="https://ibb.co/dc05HSn" data-toggle="modal" class="position-relative text-center" data-target="#exampleModal"><img src="https://i.ibb.co/sPvVXhL/video.jpg" class="img-fluid" alt="video" border="0">
-                                <span class="w-100"><i class="fas fa-2x fa-play"></i></span></a>
-                            </a>
+                        <div class="video-section position-relative">
+                            <!-- <span><i class="fas fa-2x fa-play"></i></span> -->
+                            <a href="https://youtu.be/dCVEY88Fn1k" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
 
+                                <span><i class="fas fa-2x fa-play"></i></span>
+                                <img src="https://i.ibb.co/R4HGmxx/video2.jpg" class="img-fluid">
+                            </a>
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog d-flex flex-column justify-content-center modal-dialog-centered">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_4aS5vXNLVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
                             </div>
                         </div>
                     </div>
@@ -390,7 +458,7 @@
         </section>
         <!-- ------------promo END-------------------------------------------------------------- -->
         <!-- ------------footer-------------------------------------------------------------- -->
-        <section class="footer-section py-2 py-md-5">
+        <section class="footer-section py-5">
             <footer>
                 <div class="container ">
                     <div class="row border-bottom pb-5">
@@ -473,7 +541,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <!-- lightbox gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

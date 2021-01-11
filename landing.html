@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 
-    <link id="theme" rel="stylesheet" type="text/css" href="lightmode.css" />
+    <link rel="stylesheet" type="text/css" href="samfoodies.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=Roboto+Slab:wght@300&family=Sen&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
 <body class="main-section">
 
     <section class="">
+        <div id="main-section1"></div>
         <!-------------navbar menu---------------------------------------------->
         <div class="sss main_nav" id="main-section1">
             <div class="container" id="main-section1">
@@ -38,7 +39,6 @@
                                 <span class="malek">F</span>
                                 <span class="malek">oodies</span>
                             </a>
-
                             <!-- <a class="navbar-brand d-flex" href="index.html"><span class="sohel mr-3">Sohel</span><span class="malek">Malek</span> </a>-->
                             <!--  <a class="navbar-brand" id="head_nav" href="index.html">Sohel Malek </a>-->
                             <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,8 @@
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav m-auto  ">
 
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#home">Home <span
+                                    <li class="nav-item">
+                                        <a class="nav-link active-cust" href="#home">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
@@ -62,32 +62,48 @@
                                             Section
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#services">Services</a>
-                                            <a class="dropdown-item" href="#cookingvideo">Cooking Video</a>
-                                            <a class="dropdown-item" href="#blogposts">Blog Posts</a>
+                                            <span></span>
+                                            <a class="dropdown-item" href="#services">Service</a>
+                                            <a class="dropdown-item" href="#cookingvideo">Cooking video</a>
+                                            <a class="dropdown-item" href="#blogposts">Blog Post</a>
                                             <a class="dropdown-item" href="#statistics">Statistics</a>
                                         </div>
                                     </li>
-
                                     <li class="nav-item">
                                         <a class="nav-link" href="#contact">Contact Us</a>
                                     </li>
-                                    <li class="nav-item mr-3 ml-4 justify-content-end">
-                                        <i class="fa" style="height: 25px;   width: 25px;"></i>
-                                        <!-- <a href="#" class="" id="theme-toggle">
-                                                <i class="far fa-moon moon"></i>
-                                            </a> -->
-                                    </li>
+
+                                </ul>
+                                <ul class="navbar-nav navbar-nav-1  ml-auto d-flex flex-row justify-content-end  ">
                                     <li>
-                                        <form class="form-inline my-2 my-lg-0">
-                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                                        </form>
+                                        <div class="search">
+                                            <input type="text" placeholder="search" />
+                                            <div class="symbol">
+
+                                                <svg class="lens">
+                                                    <use xlink:href="#lens" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
+                                                <path
+                                                    d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
+                                              C27.148,6.68,21.624,2.89,15.862,3.931c-3.308,0.597-6.134,2.715-7.618,5.708c-4.763,0.2-8.46,4.194-8.257,8.919
+                                              c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z" />
+                                            </symbol>
+                                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="lens">
+                                                <path d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
+                                              s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
+                                              c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
+                                              c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
+                                              C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z" />
+                                            </symbol>
+                                        </svg>
                                     </li>
-
-
-
-
+                                    <li class="nav-item mr-3  justify-content-end">
+                                        <i class="fa" style="height: 25px;   width: 25px;"></i>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -125,29 +141,64 @@
                                                 <a class="menu__body-link active-cust" href="#home">Home </a>
                                             </li>
                                             <li class="menu__body-element">
-                                                <a class="menu__body-link" href="#about">About Us  </a>
+                                                <a class="menu__body-link" href="#about">About Us </a>
                                             </li>
                                             <li class="menu__body-element">
                                                 <a class="menu__body-link" href="#chefs">Chefs </a>
                                             </li>
                                             <li class="menu__body-element">
                                                 <div class="dropdown ">
-                                                    <button onclick="myFunction()" class="dropbtn ">Section <i class="fas fa-chevron-down"></i></button>
+                                                    <button onclick="myFunction()" class="dropbtn ">Pages <i
+                                                            class="fas fa-chevron-down"></i></button>
                                                     <div id="myDropdown" class="dropdown-content">
-                                                        <a href="#services">Services</a>
-                                                        <a href="#cookingvideo">Cooking Video</a>
-                                                        <a href="#blogposts">Blog Posts</a>
+                                                        <a href="#services">Service</a>
+                                                        <a href="#cookingvideo">Cooking video</a>
+                                                        <a href="#blogposts">Blog Post</a>
                                                         <a href="#statistics">Statistics</a>
+
                                                     </div>
                                                 </div>
                                             </li>
 
                                             <li class="menu__body-element">
                                                 <a class="menu__body-link" href="#contact">
-                                              Contact Us
-                                            </a>
+                                                    Contact Us
+                                                </a>
                                                 <!-- /.menu__body-link -->
                                             </li>
+                                            <li class="menu__body-element">
+                                                <div>
+                                                    <div class="search">
+                                                        <input type="text" placeholder="search" />
+                                                        <div class="symbol">
+
+                                                            <svg class="lens">
+                                                                <use xlink:href="#lens" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
+                                                            id="cloud">
+                                                            <path
+                                                                d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
+                                                      C27.148,6.68,21.624,2.89,15.862,3.931c-3.308,0.597-6.134,2.715-7.618,5.708c-4.763,0.2-8.46,4.194-8.257,8.919
+                                                      c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z" />
+                                                        </symbol>
+                                                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                            id="lens">
+                                                            <path d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
+                                                      s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
+                                                      c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
+                                                      c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
+                                                      C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z" />
+                                                        </symbol>
+                                                    </svg>
+                                                </div>
+
+
+                                            </li>
+
                                         </ul>
 
                                         <!-- /.menu__body -->
@@ -189,14 +240,14 @@
         <!-- ------------main banner END-------------------------------------------------------------- -->
 
         <!-- ------------About Section-------------------------------------------------------------- -->
-        <section class="about-section py-2 py-md-5" id="about">
+        <section class="about-section py-5" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-6 align-self-center">
                         <img src="https://i.ibb.co/kxxmwYZ/about.png" class="img-fluid" alt="bannerimg" border="0">
                     </div>
-                    <div class="col-lg-6 d-flex flex-column justify-content-center ">
-                        <h1 class="py-4 headings-content font-weight-bold">Welcome To Our<span> Foddies</span></h1>
+                    <div class="col-md-6 d-flex flex-column justify-content-center ">
+                        <h1 class="py-4 headings-content font-weight-bold">Welcome To Our<span> Foodies</span></h1>
                         <p>Aptent taciti sociosqu ad litora conubia nostra, per inceptos himenaeos. Aenean volutpat elementum ante, id eleifend eros luctus sit.
                         </p>
                         <p>Nunc vel pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean volutpat elementum ante, id eleifend eros luctus sit amet. vel tincidunt erat neque non ipsum. Ut sollicitudin
@@ -208,16 +259,17 @@
             </div>
         </section>
         <!-- ------------About Section END-------------------------------------------------------------- -->
+
         <!-- ------------TEstimonials-------------------------------------------------------------- -->
-        <section class="testimonial-section py-2 py-md-5">
-            <div class="container-fluid bg-dangr" id="chefs">
+        <section class="testimonial-section py-5" id="chefs">
+            <div class="container-fluid bg-dangr">
                 <div class="row">
-                    <div class="col-lg-4 col-md-10 offset-1 my-auto px-1 px-md-5">
+                    <div class="col-lg-4 col-md-10 offset-md-1 my-auto px-2 px-md-5">
                         <h1 class="headings-content font-weight-bold">Hello. Our structure has been present for over 20 years. We make the best !</h1>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-2  px-2">
-                        <div class="testimonial-sub">
-                            <img src="https://i.ibb.co/g737RtY/t2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
+                    <div class="col-lg-3 col-sm-6 mt-2  px-2">
+                        <div class="testimonial-sub shadow">
+                            <img src="https://i.ibb.co/0C8y0B7/chefs-2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
                             <div class="testimonial-content">
                                 <h4 class="pt-3">Jimic Nasium
                                 </h4>
@@ -225,9 +277,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-2  px-2">
-                        <div class="testimonial-sub">
-                            <img src="https://i.ibb.co/bRSX9Z5/testimonial-2.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
+                    <div class="col-lg-3 col-sm-6 mt-2  px-2">
+                        <div class="testimonial-sub  shadow">
+                            <img src="https://i.ibb.co/xq96g3j/chefs-1.jpg" class="img-fluid img-responsive" alt="testimonial-1" border="0">
                             <div class="testimonial-content">
                                 <h4 class="pt-3">Siri Nasium
                                 </h4>
@@ -292,29 +344,36 @@
 
         </section>
         <!-- ------------TEstimonials-------------------------------------------------------------- -->
+
         <!-- ------------About Section 2-------------------------------------------------------------- -->
-        <section class="about-section py-2 py-md-5" id="cookingvideo">
+        <section class="about-section py-5" id="cookingvideo">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-5 mt-3 d-flex flex-column justify-content-center ">
-                        <h1 class="py-4 headings-content font-weight-bold">YOU CAN WATCH OUR COOKING VIDEO PROCESS!</h1>
+                    <div class="col-lg-5 mt-md-3 d-flex flex-column justify-content-center ">
+                        <h1 class="py-md-4 headings-content font-weight-bold">YOU CAN WATCH OUR COOKING VIDEO PROCESS!
+                        </h1>
                         <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, consequatur voluptatem ad.</p>
-                        <span><a href="#" class="btn btn-sm custom-btn">Play Video</a></span>
+                        <span>
+                    <a href="https://youtu.be/dCVEY88Fn1k" data-toggle="lightbox" data-gallery="gallery" class="btn btn-sm custom-btn">
+                        Play Video
+                </a>
+                </span>
                     </div>
                     <div class="col-lg-7 mt-3">
-                        <div class="video-section">
-                            <a href="https://ibb.co/dc05HSn" data-toggle="modal" class="position-relative text-center" data-target="#exampleModal"><img src="https://i.ibb.co/sPvVXhL/video.jpg" class="img-fluid" alt="video" border="0">
-                                <span class="w-100"><i class="fas fa-2x fa-play"></i></span></a>
-                            </a>
+                        <div class="video-section position-relative">
+                            <!-- <span><i class="fas fa-2x fa-play"></i></span> -->
+                            <a href="https://youtu.be/dCVEY88Fn1k" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 index-video-img">
 
+                                <span><i class="fas fa-2x fa-play"></i></span>
+                                <img src="https://i.ibb.co/sPvVXhL/video.jpg" class="img-fluid">
+                            </a>
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog d-flex flex-column justify-content-center modal-dialog-centered">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_4aS5vXNLVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_4aS5vXNLVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                             </div>
                         </div>
                     </div>
@@ -322,12 +381,15 @@
             </div>
         </section>
         <!-- ------------About Section END 2-------------------------------------------------------------- -->
+
+
+
         <!-- ------------Blog Post-------------------------------------------------------------- -->
         <section class="blog-section py-2 py-md-5" id="blogposts">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="blog-post-heading headings pt-4 pb-2">Blog Post</h1>
+                        <h1 class="blog-post-heading  m-0 m-sm-2 headings pt-4 pb-sm-2">Blog Post</h1>
                     </div>
                     <div class="col-lg-4 mt-3 my-lg-0 col-md-6">
                         <div class="blog-main border p-4 d-flex flex-column">
@@ -336,22 +398,19 @@
 
                             </div>
                             <a href="blog-single.html">
-                                <img src="https://i.ibb.co/Swp7xHD/blog1.jpg" class="img-fluid rounded w-100" alt="blog1" border="0">
+                                <img src="https://i.ibb.co/Swp7xHD/blog1.jpg" class="img-fluid w-100" alt="blog1" border="0">
                             </a>
                             <a href="blog-single.html" class="blog-title py-2">
                                 Nunc consequat justo id commodo feugiat
                             </a>
-                            <div class="d-flex justify-content-around">
-                                <a href="blog-single.html">
-                                    <i class="fas fa-user-circle"></i> Admin
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-heart"></i> 10 Likes
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-comments"></i> 19 Comments
-                                </a>
-                            </div>
+                            <ul class="admin-list m-0 p-0">
+                                <li><a href="blog-single.html"><span class="fa fa-user-circle" aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-heart" aria-hidden="true"></span>9
+                                        Likes</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-comments" aria-hidden="true"></span>9 Comments</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-3 my-lg-0 col-md-6">
@@ -361,23 +420,20 @@
 
                             </div>
                             <a href="blog-single.html">
-                                <img src="https://i.ibb.co/qRtMbsj/blog4.jpg" class="img-fluid rounded w-100" alt="blog1" border="0">
+                                <img src="https://i.ibb.co/qRtMbsj/blog4.jpg" class="img-fluid w-100" alt="blog1" border="0">
                             </a>
                             <a href="blog-single.html" class="blog-title py-2">
                                 Fusce ac eros quis metus por edit some
 
                             </a>
-                            <div class="d-flex justify-content-around">
-                                <a href="blog-single.html">
-                                    <i class="fas fa-user-circle"></i> Admin
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-heart"></i> 19 Likes
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-comments"></i> 22 Comments
-                                </a>
-                            </div>
+                            <ul class="admin-list m-0 p-0">
+                                <li><a href="blog-single.html"><span class="fa fa-user-circle" aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-heart" aria-hidden="true"></span>9
+                                        Likes</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-comments" aria-hidden="true"></span>9 Comments</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-3 my-lg-0 col-md-6">
@@ -387,23 +443,20 @@
 
                             </div>
                             <a href="blog-single.html">
-                                <img src="https://i.ibb.co/cczmMK7/blog3.jpg" class="img-fluid rounded w-100" alt="blog1" border="0">
+                                <img src="https://i.ibb.co/cczmMK7/blog3.jpg" class="img-fluid w-100" alt="blog1" border="0">
                             </a>
                             <a href="blog-single.html" class="blog-title py-2">
                                 Cras fringilla, enim a porta fermentum
 
                             </a>
-                            <div class="d-flex justify-content-around">
-                                <a href="blog-single.html">
-                                    <i class="fas fa-user-circle"></i> Admin
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-heart"></i> 96 Likes
-                                </a>
-                                <a href="blog-single.html">
-                                    <i class="fas fa-comments"></i> 52 Comments
-                                </a>
-                            </div>
+                            <ul class="admin-list m-0 p-0">
+                                <li><a href="blog-single.html"><span class="fa fa-user-circle" aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-heart" aria-hidden="true"></span>9
+                                        Likes</a></li>
+                                <li><a href="blog-single.html"><span class="fa fa-comments" aria-hidden="true"></span>9 Comments</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -464,66 +517,87 @@
             </div>
         </section>
         <!-- ------------Blog Post END-------------------------------------------------------------- -->
-        <!-- -----------counter-------------------------------------------------------------- -->
-        <section class="landing-counter py-2 py-md-5" id="statistics">
+        <!-- <%--..............Counting ......................................................--%> -->
+        <section class="about-section py-5" id="statistics">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="container-fluid">
+                            <div class="row">
 
-                    <div class="col-12 col-md-3">
-                        <div class="counter-4">
-                            <div class="counter-4-content">
-                                <div class="counter-4-icon">
-                                    <i class="fa fa-globe"></i>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
+                                        <div class="counter-4-content">
+                                            <div class="counter-4-icon">
+                                                <i class="fa fa-globe"></i>
+                                            </div>
+                                            <span class="counter-4-value">15,000</span>
+                                        </div>
+                                        <h3>Happy Customers</h3>
+                                    </div>
                                 </div>
-                                <span class="counter-4-value">15,000</span>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
+                                        <div class="counter-4-content">
+                                            <div class="counter-4-icon">
+                                                <i class="fa fa-globe"></i>
+                                            </div>
+                                            <span class="counter-4-value">1,670</span>
+                                        </div>
+                                        <h3>MASTER CHEF'S
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
+                                        <div class="counter-4-content">
+                                            <div class="counter-4-icon">
+                                                <i class="fa fa-globe"></i>
+                                            </div>
+                                            <span class="counter-4-value">9,807</span>
+                                        </div>
+                                        <h3>MASTER CHEF'S
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="counter-4 mt-4">
+                                        <div class="counter-4-content">
+                                            <div class="counter-4-icon">
+                                                <i class="fa fa-globe"></i>
+                                            </div>
+                                            <span class="counter-4-value">21</span>
+                                        </div>
+                                        <h3>YEAR'S OF EXPERIENCE
+
+                                        </h3>
+                                    </div>
+                                </div>
+
                             </div>
-                            <h3>Happy Customers</h3>
+                        </div>
+
+                        <!-- counter example -->
+                        <!-- <div class="col-12">
+                <div class="grey-bg c-no container-fluid">
+                    <div class="container">
+                        <div class="row" id="counter">
+                            <div class="col-sm-4 counter-Txt"> Customers <span class="counter-value" data-count="10">0</span> Million</div>
+                            <div class="col-sm-4 counter-Txt"> Product <span class="counter-value" data-count="25">0</span> Thousand</div>
+                            <div class="col-sm-4 counter-Txt margin-bot-35"> Team <span class="counter-value" data-count="150">0</span> Peoples</div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="counter-4">
-                            <div class="counter-4-content">
-                                <div class="counter-4-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <span class="counter-4-value">1,670</span>
-                            </div>
-                            <h3>MASTER CHEF'S
+                </div>
 
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="counter-4">
-                            <div class="counter-4-content">
-                                <div class="counter-4-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <span class="counter-4-value">9,807</span>
-                            </div>
-                            <h3>MASTER CHEF'S
-
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="counter-4">
-                            <div class="counter-4-content">
-                                <div class="counter-4-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <span class="counter-4-value">21</span>
-                            </div>
-                            <h3>YEAR'S OF EXPERIENCE
-
-                            </h3>
-                        </div>
+            </div> -->
                     </div>
 
                 </div>
             </div>
         </section>
-        <!-- -----------counter END-------------------------------------------------------------- -->
+        <!-- <%--..............Counting END......................................................--%> -->
         <!-- ------------contact form-------------------------------------------------------------- -->
         <section class="contact-form py-2 py-md-5" id="contact">
             <div class="contact-form-sub">
@@ -577,7 +651,7 @@
         <section class="promocode-section py-2">
             <div class="container py-md-4">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <img src="https://i.ibb.co/7XdCDzM/img3.png" class="img-fluid" alt="img3" border="0">
                     </div>
                     <div class="col-md-6 d-flex flex-column justify-content-center">
@@ -702,6 +776,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- lightbox gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
